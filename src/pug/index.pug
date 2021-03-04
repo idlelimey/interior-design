@@ -16,9 +16,8 @@ html(lang='en')
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:300,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,700', rel='stylesheet', type='text/css')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -29,7 +28,8 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand.js-scroll-trigger(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='')
+                    svg
+                        use(xlink:href="assets/img/navbar-logo.svg#logo")
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ml-1
@@ -94,7 +94,7 @@ html(lang='en')
                                 .portfolio-hover
                                     .portfolio-hover-content
                                         i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
+                                img.w-100(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
                             .portfolio-caption
                                 .portfolio-caption-heading Threads
                                 .portfolio-caption-subheading.text-muted Illustration

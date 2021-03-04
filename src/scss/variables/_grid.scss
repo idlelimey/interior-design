@@ -1,5 +1,10 @@
 // Override Bootstrap grid column variables
 //
 // Override the spacing between columns to add symmetry to the layout
-
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1400px
+);
 $grid-gutter-width: $spacer * 1.5;
