@@ -1,8 +1,7 @@
 // Styling for the navbar
 #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: $gray-900;
+    background-color: rgba($white, .9);
+    border-bottom: 1px solid $white;
     .navbar-toggler {
         padding: 0.75rem;
         font-family: $headings-font-family;
@@ -20,18 +19,20 @@
         text-transform: uppercase;
         svg {
             height: 2rem;
+            width: 11rem;
         }
     }
     .navbar-nav {
         .nav-item {
             .nav-link {
                 font-family: $headings-font-family;
-                font-size: 0.95rem;
-                color: $gray-400;
+                font-size: 1rem;
+                color: $gray-900;color: $gray-900;
+                mix-blend-mode: revert;
                 letter-spacing: $headings-letter-spacing;
                 &.active,
                 &:hover {
-                    color: $white;
+                    color: $black;
                 }
             }
         }
@@ -41,33 +42,24 @@
 // Responsive styling for screen width equal to or greater than the large breakpoint
 @include media-breakpoint-up(lg) {
     #mainNav {
-        border-bottom: 1px solid rgba($white,.05);
-        background-color: rgba($white, .05);
+        border-bottom: 1px solid rgba($white,.15);
+        background-color: rgba($white, .1);
         backdrop-filter: blur(2px);
         transition: background-color 0.3s ease-in-out;
         .navbar-brand {
             font-size: 1.5em;
             transition: font-size 0.3s ease-in-out;
             svg {
-                fill: $primary;
+                fill: $white;
             }
         }
         // Styling for when the navbar shrinks on larger screens
         &.navbar-shrink {
-            background-color: rgba($gray-900, .75);
-            border: 0;
-
+            background-color: rgba($white, .9);
+            border-bottom: 1px solid $white;
             .navbar-brand {
                 svg {
-                    fill: $white;
-                }
-            }
-
-            .navbar-nav .nav-item .nav-link {
-                color: $gray-400;
-                &.active,
-                &:hover {
-                    color: $white;
+                    fill: $gray-900;
                 }
             }
         }
@@ -75,9 +67,6 @@
             margin-right: 1rem;
             &:last-child {
                 margin-right: 0;
-            }
-            .nav-link {
-                color: $gray-900;
             }
         }
     }
