@@ -42,11 +42,24 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
         // Masthead
-        header.masthead
+        header.masthead.vh-100
             .container
                 .masthead-subheading Occaecat sunt aute amet ipsum Lorem
                 .masthead-heading.text-uppercase Nostrud in ipsum aliquip labore
                 a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More
+
+        // Tiles
+        section.py-3
+            .row.no-gutters
+                .col-md-4.p-0.pr-md-3
+                    .vh-50.d-flex.align-items-center.justify-content-center(style="background-image: url(assets/img/tiles/1.jpg)")
+                        h2.h1.text-white.font-weight-bold.text-uppercase Tile One
+                .col-md-4.p-0.pr-md-3
+                    .vh-50.d-flex.align-items-center.justify-content-center(style="background-image: url(assets/img/tiles/2.jpg)")
+                        h2.h1.text-white.font-weight-bold.text-uppercase Tile Two
+                .col-md-4.p-0
+                    .vh-50.d-flex.align-items-center.justify-content-center(style="background-image: url(assets/img/tiles/3.jpg)")
+                        h2.h1.text-white.font-weight-bold.text-uppercase Tile Three
 
         // Services
         section#services.page-section
